@@ -1,4 +1,4 @@
-import * as employeeData from "../singInData.json"
+import * as employeeData from "../objectsPage/singInData.json"
 
 import {
     Builder,

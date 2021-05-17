@@ -1,5 +1,5 @@
-import * as employeeData from "./singInData.json";
-import { NorthridgePage } from "./northridgeObjects";
+import * as employeeData from "./objectsPage/singInData.json"
+import { NorthridgePage } from "./objectsPage/northridgeObjects"
 const chromedriver = require("chromedriver");
 import { WebDriver, Builder, Capabilities } from "selenium-webdriver";
 const driver:WebDriver = new Builder()
