@@ -11,18 +11,9 @@ const driver: WebDriver = new Builder()
 
   const page = new northridgePage(driver);
 
-  test("exsisting customer can sign in to thier account", async () => {
+ test("Search By Brands", async () => {
     await page.navigate();
-    await page.signInButton();
-    await page.closePopup();
-    await page.signIn();
-    expect(await page.signIn())
-  
-  })
-
-  test("search items", async () => {
-    await page.doSearch("Lift Kits");
-    expect(await page.getresults()).toContain("Lift Kits");
-  })
-
-});
+    await page.shopbrandsButton();
+    expect(await page.getresults()).toContain("Brands");
+      })
+ })
