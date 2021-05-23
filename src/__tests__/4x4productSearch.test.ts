@@ -17,5 +17,7 @@ const driver: WebDriver = new Builder()
     await page.doSearch("Lift Kits");
     expect(await page.getresults()).toContain("Lift Kits");
   })
-
+  test("close pop up", async () => {
+    await page.closePopup()
+  })
 });
